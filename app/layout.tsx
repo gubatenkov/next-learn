@@ -1,7 +1,16 @@
-
-import {inter} from "@/app/ui/fonts";
+import type { Metadata } from 'next';
+import { inter } from '@/app/ui/fonts';
 
 import '@/app/ui/global.css';
+
+export const metadata: Metadata = {
+  title: {
+    template: '%s | Freedom Dashboard',
+    default: 'Freedom Dashboard',
+  },
+  description: 'The official Next.js Learn Dashboard built with App Router.',
+  metadataBase: new URL('https://next-learn-dashboard.vercel.sh'),
+};
 
 export default function RootLayout({
   children,
